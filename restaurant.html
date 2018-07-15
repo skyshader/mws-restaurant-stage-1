@@ -12,6 +12,9 @@
 </head>
 
 <body class="inside">
+  <!-- Skip to main content link -->
+  <a id="skip-link" href="#restaurant-container">Skip to main content</a>
+
   <!-- Beginning header -->
   <header>
     <!-- Beginning nav -->
@@ -31,20 +34,22 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div aria-label="restaurant map view" id="map"></div>
+      <div role="application" aria-label="restaurant map view" id="map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->
-    <section aria-labelledby="restaurant-name" id="restaurant-container">
-      <h1 id="restaurant-name"></h1>
-      <img id="restaurant-img">
-      <p id="restaurant-cuisine"></p>
-      <p id="restaurant-address"></p>
-      <table id="restaurant-hours"></table>
+    <section tabindex="0" aria-labelledby="restaurant-name" id="restaurant-container">
+      <h2 tabindex="0" id="restaurant-name"></h2>
+      <img tabindex="0" id="restaurant-img">
+      <p tabindex="0" id="restaurant-cuisine"></p>
+      <p tabindex="0" id="restaurant-address"></p>
+      <table tabindex="0" id="restaurant-hours">
+        <caption>Open Timings</caption>
+      </table>
     </section>
     <!-- end restaurant -->
     <!-- Beginning reviews -->
-    <section aria-labelledby="reviews-container-heading" id="reviews-container">
+    <section tabindex="0" aria-labelledby="reviews-container-heading" id="reviews-container">
       <ul id="reviews-list"></ul>
     </section>
     <!-- End reviews -->

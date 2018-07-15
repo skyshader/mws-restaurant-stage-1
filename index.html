@@ -10,6 +10,9 @@
 </head>
 
 <body>
+  <!-- Skip to main content link -->
+  <a id="skip-link" href="#restaurant-content">Skip to main content</a>
+
   <header>
     <nav>
       <h1><a href="/">Restaurant Reviews</a></h1>
@@ -18,9 +21,9 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div aria-label="restaurant's list map view" id="map"></div>
+      <div role="application" aria-label="restaurant's list map view" id="map"></div>
     </section>
-    <section>
+    <section id="restaurant-content">
       <div aria-labelledby="filter-result" class="filter-options">
         <h2 id="filter-result">Filter Results</h2>
         <select aria-label="Select Neighborhoods" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">

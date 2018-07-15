@@ -43,6 +43,20 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
     display: block;
 }
 
+#skip-link {
+    padding: 10px;
+    background: #ff5858;
+    color: #fff;
+    display: inline-block;
+    position: absolute;
+    top: -50px;
+    font-size: 11pt;
+}
+
+#skip-link:focus {
+    top: 0;
+}
+
 #maincontent {
     background-color: #f3f3f3;
     min-height: 100%;
@@ -246,7 +260,7 @@ nav h1 a {
     object-fit: cover;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
     color: orange;
     font-family: Arial, sans-serif;
     font-size: 14pt;
@@ -331,11 +345,6 @@ nav h1 a {
     width: 100%;
 }
 
-#restaurant-address {
-    font-size: 12pt;
-    margin: 10px 0;
-}
-
 #restaurant-cuisine {
     background-color: #333;
     color: #ddd;
@@ -347,6 +356,13 @@ nav h1 a {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
+}
+
+#restaurant-address {
+    font-size: 12pt;
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 #restaurant-container,
@@ -428,6 +444,14 @@ nav h1 a {
 
 .review-comment {
     padding-top: 10px;
+}
+
+#restaurant-hours caption {
+    text-align: left;
+    color: #444;
+    padding: 2px;
+    font-size: 11pt;
+    font-weight: bold;
 }
 
 #restaurant-hours td {
